@@ -1,6 +1,6 @@
 package com.company;
 
-public class Cube {
+public class Cube implements IPaking {
         private int side;
 
     public Cube(int side) {
@@ -36,6 +36,16 @@ public class Cube {
         return "Cube{" +
                 "Довжина сторони куба = " + side +
                 '}';
+    }
+
+    @Override
+    public String toJSON() {
+        return null;
+    }
+
+    @Override
+    public String toXML() {
+        return null;
     }
 }
 
